@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>후기 | 송귀옥</title>
+<meta name="description" content="송귀옥 강사의 수강생·기관 후기를 확인하세요.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">송귀옥<span>.</span></a>
+    <button class="nav-toggle" aria-label="메뉴 열기">≡</button>
+    <ul class="nav-links">
+      <li><a href="index.html">홈</a></li>
+      <li><a href="lectures.html">강의소개</a></li>
+      <li><a href="reviews.html" aria-current="page">후기</a></li>
+      <li><a href="contact.html">문의</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding:56px 0 40px;">
+  <div class="container">
+    <span class="eyebrow">후기</span>
+    <h1 style="font-size:clamp(28px,4vw,40px);">배움이 일상의 변화로 이어졌습니다</h1>
+    <p class="lead">송귀옥 강사의 교육은 기능을 배우는 데서 끝나지 않고, 배운 것을 자신의 일상에서 직접 사용해 보는 것을 중요하게 생각합니다.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="card-grid" id="reviews-full">
+      <p class="state-msg">불러오는 중...</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt" style="text-align:center;">
+  <div class="container">
+    <div class="section-head">
+      <h2>함께 배우고 싶으신가요?</h2>
+    </div>
+    <a href="contact.html" class="btn btn-primary">강의 문의하기</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> 송귀옥. All rights reserved.</div>
+    <div style="display:flex; gap:16px; flex-wrap:wrap;">
+      <a href="https://blog.naver.com/dhrdl5252" target="_blank" rel="noopener">네이버 블로그</a>
+      <a href="https://brunch.co.kr/@narsha-now" target="_blank" rel="noopener">브런치</a>
+      <a href="https://www.youtube.com/@narsha-now" target="_blank" rel="noopener">유튜브</a>
+      <a href="https://www.instagram.com/narsha.now/" target="_blank" rel="noopener">인스타그램</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="js/data-loader.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderReviews("reviews-full");
+</script>
+</body>
+</html>

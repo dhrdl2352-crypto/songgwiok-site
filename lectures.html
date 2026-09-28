@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>강의소개 | 송귀옥</title>
+<meta name="description" content="송귀옥 강사의 강의 분야, 강의 이력, 자격사항을 소개합니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">송귀옥<span>.</span></a>
+    <button class="nav-toggle" aria-label="메뉴 열기">≡</button>
+    <ul class="nav-links">
+      <li><a href="index.html">홈</a></li>
+      <li><a href="lectures.html" aria-current="page">강의소개</a></li>
+      <li><a href="reviews.html">후기</a></li>
+      <li><a href="contact.html">문의</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding:56px 0 40px;">
+  <div class="container">
+    <span class="eyebrow">강의소개</span>
+    <h1 style="font-size:clamp(28px,4vw,40px);">강의 분야와 전체 강의 이력</h1>
+    <p class="lead">스마트폰 활용부터 영상 편집, AI 활용까지 — 현장에서 쌓아온 강의 이력을 모두 소개합니다.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>강의 분야</h2>
+    </div>
+    <div class="field-grid">
+      <div class="field-card"><div class="icon">📱</div><h3>스마트폰 활용 교육</h3><p>스마트폰 기초부터 생활에 필요한 앱·디지털 안전까지</p></div>
+      <div class="field-card"><div class="icon">✨</div><h3>생성형 AI 활용 교육</h3><p>ChatGPT·Gemini 등 생성형 AI를 일상과 업무에 활용</p></div>
+      <div class="field-card"><div class="icon">🎥</div><h3>AI 콘텐츠 제작</h3><p>AI 이미지·영상·쇼츠·SNS 콘텐츠 제작 실습</p></div>
+      <div class="field-card"><div class="icon">🛡️</div><h3>디지털 리터러시 교육</h3><p>정보 검색·검증부터 피싱 예방·안전한 디지털 생활까지</p></div>
+      <div class="field-card"><div class="icon">🧓</div><h3>시니어 디지털·AI 교육</h3><p>시니어 눈높이에 맞춘 스마트폰·AI 실생활 활용 교육</p></div>
+      <div class="field-card"><div class="icon">🏪</div><h3>소상공인 AI 활용 교육</h3><p>생성형 AI를 활용한 홍보 콘텐츠·SNS·업무 활용 실습</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>강의 이력 전체보기</h2>
+    </div>
+    <div class="card-grid" id="lectures-full">
+      <p class="state-msg">불러오는 중...</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>강의 현장</h2>
+      <p>스마트폰부터 생성형 AI까지,<br>다양한 교육 현장에서 함께 배우고 있습니다.</p>
+    </div>
+    <div class="gallery-grid">
+      <button class="gallery-item" type="button" data-src="images/gallery-1.jpg"><img src="images/gallery-1.jpg" alt="강의 현장 사진" loading="lazy"></button>
+      <button class="gallery-item" type="button" data-src="images/gallery-2.jpg"><img src="images/gallery-2.jpg" alt="강의 현장 사진" loading="lazy"></button>
+      <button class="gallery-item" type="button" data-src="images/gallery-3.jpg"><img src="images/gallery-3.jpg" alt="강의 현장 사진" loading="lazy"></button>
+      <button class="gallery-item" type="button" data-src="images/gallery-4.jpg"><img src="images/gallery-4.jpg" alt="강의 현장 사진" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" type="button" aria-label="닫기">✕</button>
+  <img id="lightbox-img" src="" alt="강의 현장 사진 확대보기">
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>자격사항</h2>
+    </div>
+    <ul class="cert-list" id="cert-list-full">
+      <li class="state-msg">불러오는 중...</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section-alt" style="text-align:center;">
+  <div class="container">
+    <div class="section-head">
+      <h2>강의를 요청하고 싶으신가요?</h2>
+    </div>
+    <a href="contact.html" class="btn btn-primary">강의 문의하기</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> 송귀옥. All rights reserved.</div>
+    <div style="display:flex; gap:16px; flex-wrap:wrap;">
+      <a href="https://blog.naver.com/dhrdl5252" target="_blank" rel="noopener">네이버 블로그</a>
+      <a href="https://brunch.co.kr/@narsha-now" target="_blank" rel="noopener">브런치</a>
+      <a href="https://www.youtube.com/@narsha-now" target="_blank" rel="noopener">유튜브</a>
+      <a href="https://www.instagram.com/narsha.now/" target="_blank" rel="noopener">인스타그램</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="js/data-loader.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderLectures({ fullContainerId: "lectures-full" });
+  renderCerts("cert-list-full");
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>문의 | 송귀옥</title>
+<meta name="description" content="송귀옥 강사에게 강의를 문의하세요.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">송귀옥<span>.</span></a>
+    <button class="nav-toggle" aria-label="메뉴 열기">≡</button>
+    <ul class="nav-links">
+      <li><a href="index.html">홈</a></li>
+      <li><a href="lectures.html">강의소개</a></li>
+      <li><a href="reviews.html">후기</a></li>
+      <li><a href="contact.html" aria-current="page">문의</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding:56px 0 40px;">
+  <div class="container" style="text-align:center;">
+    <span class="eyebrow">문의</span>
+    <h1 style="font-size:clamp(28px,4vw,40px);">강의를 요청해 주세요</h1>
+    <p class="lead">아래 양식을 작성하시면 이메일로 문의 내용이 전달됩니다.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <form class="contact-form" id="contact-form">
+      <div class="form-row">
+        <label for="cf-name">이름 / 기관명 *</label>
+        <input type="text" id="cf-name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="cf-phone">연락처</label>
+        <input type="tel" id="cf-phone" name="phone" placeholder="010-0000-0000">
+      </div>
+      <div class="form-row">
+        <label for="cf-message">문의 내용 *</label>
+        <textarea id="cf-message" name="message" required placeholder="강의 일정, 대상, 인원, 희망 주제 등을 자유롭게 남겨주세요."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">문의 보내기</button>
+      <p style="font-size:14px; color:var(--text-sub); margin-top:12px; text-align:center;">
+        버튼을 누르면 작성하신 내용으로 이메일 앱이 열립니다.
+      </p>
+    </form>
+
+    <div class="contact-direct">
+      <div class="item">
+        <div class="label">전화</div>
+        <div class="value">010-9517-5587</div>
+      </div>
+      <div class="item">
+        <div class="label">활동 지역</div>
+        <div class="value">서울 용산구 일대 · 전국 출강 가능</div>
+      </div>
+      <div class="item">
+        <div class="label">네이버 블로그</div>
+        <div class="value"><a href="https://blog.naver.com/dhrdl5252" target="_blank" rel="noopener">blog.naver.com/dhrdl5252</a></div>
+      </div>
+      <div class="item">
+        <div class="label">브런치</div>
+        <div class="value"><a href="https://brunch.co.kr/@narsha-now" target="_blank" rel="noopener">brunch.co.kr/@narsha-now</a></div>
+      </div>
+      <div class="item">
+        <div class="label">유튜브</div>
+        <div class="value"><a href="https://www.youtube.com/@narsha-now" target="_blank" rel="noopener">@narsha-now</a></div>
+      </div>
+      <div class="item">
+        <div class="label">인스타그램</div>
+        <div class="value"><a href="https://www.instagram.com/narsha.now/" target="_blank" rel="noopener">@narsha.now</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> 송귀옥. All rights reserved.</div>
+    <div style="display:flex; gap:16px; flex-wrap:wrap;">
+      <a href="https://blog.naver.com/dhrdl5252" target="_blank" rel="noopener">네이버 블로그</a>
+      <a href="https://brunch.co.kr/@narsha-now" target="_blank" rel="noopener">브런치</a>
+      <a href="https://www.youtube.com/@narsha-now" target="_blank" rel="noopener">유튜브</a>
+      <a href="https://www.instagram.com/narsha.now/" target="_blank" rel="noopener">인스타그램</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="js/data-loader.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
